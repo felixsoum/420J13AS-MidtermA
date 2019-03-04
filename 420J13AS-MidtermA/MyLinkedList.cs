@@ -6,12 +6,13 @@
 
         public void InsertFirst(MyLinkedListNode<T> x)
         {
-            //TODO
+            x.next = head;
+            head = x;
         }
 
         public void DeleteFirst()
         {
-            //TODO
+            head = head.next;
         }
 
         public override string ToString()
